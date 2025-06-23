@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <h1>Crie uma Tarefa</h1>
+   </header>
+   <div class= "formulario">
+       <form action="/criar" method="post">
+
+        <label for="nome_tarefa">Nome da Tarefa</label>
+        <input type="text" name="titulo" id="nome_tarefa" placeholder="Nome do Trabalho">
+
+        <label for="data_tarefa">Data da Tarefa</label>
+        <input type="date" name="data" id="data_tarefa">
+
+        <label for="url_info">Url</label>
+        <input type="url" name="urlInfo" id="url_info" placeholder="URL">
+        
+            <select name="disciplina" class="form-select">
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+                <option value="ingles">Inglês</option>
+                <option value="historia">História</option>
+                <option value="geografia">Geografia</option>
+                <option value="fisica">Física</option>
+                <option value="quimica">Química</option>
+                <option value="biologia">Biologia</option>
+                <option value="artes">Artes</option>
+                <option value="edFisica">Educação Física</option>
+              </select>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+       </form>
+       
+   </div>
+</body>
+</html>
